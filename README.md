@@ -8,7 +8,7 @@
 
 规范组合类的范围在 0~255 之间。用于描述不相干附标符号的优先级。相干附标符号优先级由附标符号与基本字符之间的距离决定，近者优先。
 
-![image-1](assets\img\1.png)
+![image-1](assets/img/1.png)
 
 <center><small>图 1 规范排序<br/>（图源 <a href="https://www.unicode.org/versions/Unicode15.0.0/UnicodeStandard-15.0.pdf">Unicode 15.0 标准文档</a>）</small></center>
 
