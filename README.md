@@ -2,6 +2,61 @@
 
 此 Python 包可用于处理拉丁文本标准化问题。
 
+# 〇、使用方法
+
+## 1. 整体调用
+
+```python
+import latin-normalize
+```
+
+整体调用要求调用时 `latin-normalize` 文件夹必须位于正在调用的文件的同级目录。
+
+若 `latin-normalize` 不在同级目录，而是在目录 `<some_path>` 中，则需要按照以下方式调用：
+
+```python
+import sys
+sys.path.append(r'<some_path>')
+import latin-normalize
+```
+
+使用函数或其他内容时，如是操作：
+
+```python
+latin-normalize.getClass('A')
+```
+
+
+
+## 2. 部分调用
+
+```python
+# 调用所有
+from latin-normalize import *
+# 调用个别
+from latin-normalize import getClass, getCode
+```
+
+部分调用要求调用时 `latin-normalize` 文件夹必须位于正在调用的文件的同级目录。
+
+若 `latin-normalize` 不在同级目录，而是在目录 `<some_path>` 中，则需要按照以下方式调用。
+
+```python
+import sys
+sys.path.append(r'<some_path>')
+# 调用所有
+from latin-normalize import *
+# 调用个别
+from latin-normalize import getClass, getCode
+```
+
+使用函数或其他内容时，如是操作：
+
+```python
+getClass('A')
+getCode('B')
+```
+
 # 一、字符的规范组合类信息
 
 规范组合类用于指示附标字符附加到基础字符上的优先级。其中规范组合类为 0 的是基本字符，大于 0 的是附标字符。
